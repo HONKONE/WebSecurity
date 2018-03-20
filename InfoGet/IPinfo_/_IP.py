@@ -6,9 +6,10 @@ import exceptions
 import re
 import IpInfoGet
 
-class Main_IP(object):
+class Main(object):
     def __init__(self,ipdata):
         self.ipdata=ipdata
+        print ipdata
     
     def AnalysisIP(self):
         IP_re=re.findall(r'([\d]{1,3})\.([\d]{1,3})\.([\d]{1,3})\.([\d]{1,3})',self.ipdata)
@@ -22,9 +23,8 @@ class Main_IP(object):
         else:
             raise TypeError("IP data type error,you should enter like this :192.168.0.1")     
     
-    def runAll(self):
-        self.AnalysisIP()
-        IpInfoGet.GetIpPlace(self.ipdata)
+    def getplace(self):
+        print "{0}-->".format(self.ipdata),IpInfoGet.GetIpPlace(self.ipdata)
 
 if __name__ == "__main__":
-    Main_IP("2.2.2.2").runAll()
+    Main("2.2.2.2").getplace()
