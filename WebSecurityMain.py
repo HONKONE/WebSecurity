@@ -1,9 +1,11 @@
 #encoding:utf-8
 import optparse
-from InfoGet import *
 import json
 import os
 import sys
+import InfoGet
+from InfoGet.IpInfo._IP import *
+
 
 
 
@@ -18,4 +20,8 @@ def initoptparse():
 
 if __name__ == "__main__":
     options,args=initoptparse()
+    if options.ipdata:
+        Main_IP(options.ipdata).runAll()
+        # ss(options.ipdata)
+        
     

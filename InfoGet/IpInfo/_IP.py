@@ -24,6 +24,7 @@ class Main_IP(object):
     
     def runAll(self):
         self.AnalysisIP()
+        IpInfoGet.GetIpPlace(self.ipdata)
 
 if __name__ == "__main__":
-    Main_IP("546.564.54.585").runAll()
+    Main_IP("2.2.2.2").runAll()
