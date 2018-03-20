@@ -2,8 +2,10 @@
 import optparse
 from InfoGet import *
 import json
+import os
+import sys
 
-InfoGet_list=['ipdata','domaindata']
+
 
 def initoptparse():
     parser=optparse.OptionParser()
@@ -16,6 +18,4 @@ def initoptparse():
 
 if __name__ == "__main__":
     options,args=initoptparse()
-    print options
-    for _ in options.keys():
-        print _
+    
