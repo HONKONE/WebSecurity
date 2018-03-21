@@ -9,7 +9,6 @@ import IpInfoGet
 class Main(object):
     def __init__(self,ipdata):
         self.ipdata=ipdata
-        print ipdata
     
     def AnalysisIP(self):
         IP_re=re.findall(r'([\d]{1,3})\.([\d]{1,3})\.([\d]{1,3})\.([\d]{1,3})',self.ipdata)

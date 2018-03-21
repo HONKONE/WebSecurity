@@ -6,10 +6,9 @@ def dynamic_import(module):
 def runmoduleW(module,*argv):
     print '------------',module,argv
     loadmodule=dynamic_import(module)
-    getattr(loadmodule.Main(),argv[0])(argv[1:])
+    getattr(loadmodule.Main(),argv[0])(argv[1])
 
 def runmoduleI(module,*argv):
-    print '------------',module,argv[1]
     loadmodule=dynamic_import(module)
     getattr(loadmodule.Main(argv[1]),argv[0])()
 
