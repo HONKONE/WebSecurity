@@ -6,6 +6,7 @@ import exceptions
 import re
 import IpInfoGet
 
+
 class Main(object):
     def __init__(self,ipdata):
         self.ipdata=ipdata
