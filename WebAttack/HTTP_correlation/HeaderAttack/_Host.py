@@ -8,3 +8,6 @@ class Main(object):
         self.payload=payload 
         #list module,if you need more payload or parameter,you can add your demand Behind --WH HeaderAttack-Host 
 print "hello"
+print "hello"
+print "hello"
+print "hello"
